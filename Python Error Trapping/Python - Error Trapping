@@ -1,0 +1,47 @@
+'''
+    .Synopsis  
+    Basic Examples of how to manage error handling in Python 
+
+    .DESCRIPTION  
+	Basic Examples of how to manage error handling in Python 
+	
+ 
+    .LINK
+    Online Website: https://scotthead37.wixstudio.com/python/errortrapping
+        
+    .NOTES
+    Basic input error handling 
+
+'''
+# Sample 1 Error Trapping 
+
+try:
+    # Code that might raise an exception
+    x = int(input("Enter a number: "))
+    y = 10 / x
+    print("Result:", y)
+
+except ValueError:
+    # Code to handle a specific exception (ValueError in this case)
+    print("Exception Found: Invalid input. Please Enter a Integer")
+
+except ZeroDivisionError:
+    # Code to handle another specific exception
+    print("Cannot Divide by Zero")
+
+finally:
+    # Code that will always execute, regardless of exceptions
+    print("Try-Except-Finally Block Completed - Script Exited")
+
+
+# Sample 2 Error Trapping 
+
+try:
+    var_date = int(input("Enter a number: "))
+    if var_date > 31:
+        raise ValueError("Date Cannot Be Higher than 31")
+    print("More Code Executed if No Exception")
+                
+except ValueError as msg:
+    print("Input Value Error:", msg)
+    
