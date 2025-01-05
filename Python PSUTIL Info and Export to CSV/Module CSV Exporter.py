@@ -1,14 +1,6 @@
 import csv
 
 # --- Example Usage ---
-# -- Import ---
-# Dynamically load the module using the full path
-#module_path = r"C:\PYTHON\modules\export_csv.py"
-#spec = importlib.util.spec_from_file_location("csv_exporter", module_path)
-#csv_exporter = importlib.util.module_from_spec(spec)
-#sys.modules["csv_exporter"] = csv_exporter
-#spec.loader.exec_module(csv_exporter)
-
 # -- Call and Update File Name --
 #csv_exporter.export_to_csv(drives, filename="drives_info.csv")
 
