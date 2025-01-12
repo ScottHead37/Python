@@ -1,23 +1,44 @@
-# Designed for a Helper Tool for Using RHEL 9 Commands 
-# Has standard commands and extened help like Banner setup 
+from pathlib import Path
+import os
+# Clearing the Screen
+os.system('cls')
 
-# Print Main Help Menu to Screen
-# ---------------- File - Display Contents to Screen -------------
-file = open('Menu.txt','r')
-for line in file:
-    print(line)
-file.close()
+# Menu Header 
+print("############### Shell Helper Menu #####################")
 
+# Determine the path to 'menu.txt' in the current directory
+p = Path(__file__).with_name('menu.txt')
 
-def http_error(status):
-    match status:
-        case 400:
-            return "Bad request"
-        case 404:
-            return "Not found"
-        case 418:
-            return "I'm a teapot"
+# Open and read the file
+with p.open('r') as f:
+    # Read all lines from the file and strip leading/trailing whitespace
+    lines = [line.strip() for line in f.readlines()]
 
-        # If an exact match is not confirmed, this last case will be used if provided
-        case _:
-            return "Something's wrong with the internet"
+# Sort the lines alphabetically
+lines.sort()
+
+# Display each line with an incrementing integer
+for index, line in enumerate(lines, start=1):
+    print(f"{index}. {line}")
+
+# Menu Header 
+print("#######################################################")
+
+# Prompt the user to choose an integer from the menu
+try:
+    selection = int(input("\nChoose an integer from the menu above: "))
+    if 1 <= selection <= len(lines):
+        selected_line = lines[selection - 1]   
+    else:
+        print("\nInvalid selection. Please choose a number from the menu.")
+except ValueError:
+    print("\nInvalid input. Please enter a valid integer.")
+
+os.system('cls')
+
+# Prints the Data to Screen from Txt file
+p = Path(__file__).with_name(f"{selected_line}.txt")
+with p.open('r') as f:
+    print(f.read())
+print("\n")
+input("Press Enter to continue...")

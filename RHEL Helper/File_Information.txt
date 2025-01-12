@@ -1,0 +1,10 @@
+|------------------ ls Shell------------------|
+ls --help       (Help for a Command)
+ls -a           (Show Hidden Files)
+ls -R           (Recursive Review)
+ls -l > Out.txt (Change STDOUT)
+
+file Filename   (See File Type)
+
+
+|-------------- End ls Shell------------------|

@@ -1,0 +1,25 @@
+|------------------ SSH Banner Shell------------------|
+
+nano /etc/motd  (Posts Messages to Console Post Login)
+nano /etc/issue (Posts Messages to Console Pre-Login)
+
+#------ Pre-Login Banner Issue / Solution  -----------
+How to troubleshoot: (When /etc/issue does not work)
+
+Check the sshd_config file:
+Open the file: sudo nano /etc/ssh/sshd_config
+
+Search for the line containing "Banner": Banner /etc/ssh/sshd-banner
+
+If the line is missing or commented out, add it with the correct path to your banner file.
+
+Verify banner file content:
+Open the banner file: sudo nano /etc/ssh/sshd-banner
+
+Ensure the text you want displayed as the banner is present in the file.
+
+Restart SSH service:
+Run sudo systemctl restart sshd
+
+
+|-------------- End SSH Banner Shell------------------|

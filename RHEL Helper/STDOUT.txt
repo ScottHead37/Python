@@ -1,0 +1,10 @@
+|------------------ STDOUT Shell------------------|
+
+#---Controls the Output of the file---
+ifconfig > IPInfo.txt   (Writes Output to File)
+ifconfig >> IPInfo.txt  (Appends Output to File)
+
+#---Output to File and Print to Screen---
+ifconfig | tee IPInfo.txt  
+
+|-------------- End STDOUT Shell------------------|

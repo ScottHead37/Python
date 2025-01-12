@@ -1,0 +1,6 @@
+|------------------ MISC Shell------------------|
+nano ~/.bachrc  (Config File User Specific)
+
+gd tab tab      (Double Tab Auto Complete)
+
+|-------------- End MISC Shell------------------|

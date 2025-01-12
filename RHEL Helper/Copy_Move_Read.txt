@@ -1,0 +1,27 @@
+|------------------ Copy Move Read Shell------------------|
+
+|-- Move File ---|
+ mv MyCommands /home/shead/Documents/ (Move File to new Dir)
+
+|--Delete File / Directory--|
+rm -R (Remove Directory and Contents)
+rm (Remove File)
+
+|-- File Copy --|
+cp Currnet_FileName New_FileName    (Copy File to Same Dir)
+cp MyCommands ~/Documents           (Copy File to Other Dir)
+
+
+|-- Read \ Write to File --|
+|-- May Require Install  --|
+
+cat myfilename          (Read Only File)
+cat myfilename | more   (Read Only with Paging)
+
+nano myfilename (Read \ Write)
+    ctrl+o  | Saves File
+    ctrl+x  | Exits File 
+
+vi myfilename (Read \ Write )
+
+|-------------- End Copy Move Read Shell------------------|

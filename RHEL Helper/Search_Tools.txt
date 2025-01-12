@@ -1,0 +1,11 @@
+|------------------ Search Tools Shell------------------|
+
+greg inet myfile.log (Searches File for inet string)
+
+
+
+
+
+
+
+|-------------- End Search Tools Shell------------------|

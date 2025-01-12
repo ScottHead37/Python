@@ -1,0 +1,11 @@
+|------------------ Help Manual Info Shell------------------|
+
+man -k partition    (Search Notes on Man Files for Word Partition)
+
+man ls              (Shows Manual File for ls)
+
+ls --help           (Shows Helpm File for ls)
+
+sudo mandb          (Updates Manual Files)
+
+|--------------- End Help Manual Info Shell------------------|
