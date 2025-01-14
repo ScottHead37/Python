@@ -1,4 +1,4 @@
-File_and_Drive_Information
+File_and_Drive
 Set_Directory_Permissions
 Copy_Move_Read
 SSH_Banner
@@ -6,3 +6,4 @@ MISC
 STDOUT
 Help_Man_Info
 Search_Tools
+Tar_Gzip

@@ -1,4 +1,6 @@
-|------------------ SSH Banner Shell------------------|
+######################################################
+##################### Banners ########################
+######################################################
 
 nano /etc/motd  (Posts Messages to Console Post Login)
 nano /etc/issue (Posts Messages to Console Pre-Login)
@@ -21,5 +23,6 @@ Ensure the text you want displayed as the banner is present in the file.
 Restart SSH service:
 Run sudo systemctl restart sshd
 
-
-|-------------- End SSH Banner Shell------------------|
+######################################################
+#################### End Helper ######################
+######################################################

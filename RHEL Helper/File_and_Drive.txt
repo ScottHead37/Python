@@ -1,0 +1,18 @@
+######################################################
+################## File and Drive ####################
+######################################################
+
+findmnt         (Shows Mount Structure)
+df -Th          (Shows Hard Drive Info)
+
+ls --help       (Help for a Command)
+ls -a           (Show Hidden Files)
+ls -lrt         (Shows Permissions and Modified Date)
+ls -R           (Recursive Review)
+ls -l > Out.txt (Change STDOUT)
+
+file Filename   (See inode Info)
+
+######################################################
+#############------- End Helper ------################
+######################################################

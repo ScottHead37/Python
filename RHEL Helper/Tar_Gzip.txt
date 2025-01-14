@@ -1,0 +1,17 @@
+######################################################
+################### Tar and Gzip #####################
+######################################################
+
+tar -cvf MyZip.tar Downloads/*              (Zip Directory to Single File)
+tar -czvf MyZip.tar Downloads/*             (Zip & Compress Directory to Single File)
+
+tar -tf MyZip.tar                           (Display Contents of the tar File)
+                                            (Can Also be Used on GZip Files)
+
+gzip MyZip.tar                              (Compress Tar File)
+
+tar -xvf MyZip.tar -C /home/shead/Desktop   (Unzip / Decompress to Desktop)
+
+######################################################
+#################### End Helper ######################
+######################################################
