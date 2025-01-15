@@ -4,13 +4,19 @@
 
 findmnt         (Shows Mount Structure)
 df -Th          (Shows Hard Drive Info)
+file Filename   (See File Type)
 
 ls --help       (Help for a Command)
 ls -a           (Show Hidden Files)
 ls -R           (Recursive Review)
 ls -l > Out.txt (Change STDOUT)
 
-file Filename   (See File Type)
+less myfile.txt     (View as Paging PgUp & Pg Dwn | q to Quit)         
+more myfile.txt     (Shows Data with Paging Space Bar to Next Page)
+head -n 5 file.txt  (Shows First X Number of Lines)
+tail -n 5 file.txt  (Shows Last X Number of Lines)  
+sort myfile.txt     (Shows File and Sorts Items)
+wc myfile.txt       (Counts Lines, words char)    
 
 ######################################################
 ############------- End Helper ------#################
