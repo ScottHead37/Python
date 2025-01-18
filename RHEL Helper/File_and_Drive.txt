@@ -1,18 +1,31 @@
 ######################################################
-################## File and Drive ####################
+########## File and Drive Information ################
 ######################################################
 
 findmnt         (Shows Mount Structure)
 df -Th          (Shows Hard Drive Info)
+file Filename   (See File Type)
+
+grep inet myfile.log    (Searches File for inet string)
+grep ^Scott myfile.log  (Searches File for Word at Start of Line)
+grep Scott$ myfile.log  (Searches for Word at End of Line)
+grep Sco*   myfile.log  (Searches with Wildcard Match)
+grep scott -i file.log  (Searches but Ignores Case)
+grep Sample -r /home/shead (Searches All Items and Sub-Directories)
 
 ls --help       (Help for a Command)
 ls -a           (Show Hidden Files)
-ls -lrt         (Shows Permissions and Modified Date)
 ls -R           (Recursive Review)
 ls -l > Out.txt (Change STDOUT)
 
-file Filename   (See inode Info)
+less myfile.txt     (View as Paging PgUp & Pg Dwn | q to Quit) 
+ps aux | less       (Pipe Data to Less Command)        
+more myfile.txt     (Shows Data with Paging Space Bar to Next Page)
+head -n 5 file.txt  (Shows First X Number of Lines)
+tail -n 5 file.txt  (Shows Last X Number of Lines)  
+sort myfile.txt     (Shows File and Sorts Items)
+wc myfile.txt       (Counts Lines, words char)    
 
 ######################################################
-#############------- End Helper ------################
+############------- End Helper ------#################
 ######################################################
