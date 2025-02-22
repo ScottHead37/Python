@@ -1,0 +1,34 @@
+######################################################
+################### Users & Groups ###################
+######################################################
+
+whoami          (Dispaly Current User)
+sudo            (Elevate User Privlidge)
+sudo visudo     (Displays Sudo Config)
+su              (Login as Root)
+
+sudo useradd Sammy              (Add User Account)
+sudo passwd Sammy               (Set | Reset Password)
+sudo userdel -r Sammy           (Remove User and Profile)
+sort /etc/passwd                (Display User Accounts)   
+
+sudo usermod -aG wheel Sammy    (Modify User Account(--append --groups))
+sudo usermod -aG newgroup Sammy (Add User to Group)
+sudo gpasswd --delete Sammy newgroup    (Remove User from Group)
+sudo groupdel newgroup          (Deletes a Group)
+id Sammy                        (Shows User Info)
+
+################################################ Example ################################################
+[Localhost srv]$ sudo mkdir files               (Create a Dir to Share with other Users on Local System)
+[Localhost srv]$ sudo groupadd newgroup         (Create a New Group)
+[Localhost srv]$ sudo chgrp -R newgroup files   (Command changes the group ownership of directory)
+[Localhost srv]$ sudo chmod g+rwx files         (Command changes the permissions rwx on directory)
+[Localhost srv]$ sudo usermod -aG newgroup Sammy   (Add Users to Group for Access)
+[Localhost srv]$ sudo usermod -aG newgroup Joey    (Add Users to Group for Access)
+
+We should be able to login as either Joey or Sammy and access the /srv/files Directory and create files 
+----------------------------------------------------------------------------------------------------------
+
+######################################################
+#################### End Helper ######################
+######################################################
